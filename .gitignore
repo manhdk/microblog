@@ -24,3 +24,6 @@ ENV/
 # IDE
 .vscode/
 .idea/
+
+# Migrations
+migrations

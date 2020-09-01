@@ -17,6 +17,8 @@ from logging.handlers import SMTPHandler, RotatingFileHandler
 import os
 
 if not app.debug:
+    # select logs or email to test (code above)
+    '''
     if not os.path.exists('logs'):
         os.mkdir('logs')
     file_handler = RotatingFileHandler('logs/microblog.log', maxBytes=10240, backupCount=10)
@@ -26,7 +28,7 @@ if not app.debug:
 
     app.logger.setLevel(logging.INFO)
     app.logger.info('Microblog startup')
-
+    '''
     '''
     if app.config['MAIL_SERVER']
     auth = None

@@ -1,1 +1,24 @@
 2020-09-01 14:15:58,289 INFO: Microblog startup [in /home/manhdk/PycharmProjects/PYTHON/microblog/app/__init__.py:28]
+2020-09-01 14:38:34,972 INFO: Microblog startup [in /home/manhdk/PycharmProjects/PYTHON/microblog/app/__init__.py:28]
+2020-09-01 14:38:59,496 ERROR: Exception on /edit_profile [GET] [in /home/manhdk/PycharmProjects/PYTHON/microblog/venv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/manhdk/PycharmProjects/PYTHON/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/manhdk/PycharmProjects/PYTHON/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/manhdk/PycharmProjects/PYTHON/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/home/manhdk/PycharmProjects/PYTHON/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2098, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-09-01 14:39:17,818 ERROR: Exception on /edit_profile [GET] [in /home/manhdk/PycharmProjects/PYTHON/microblog/venv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/manhdk/PycharmProjects/PYTHON/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/manhdk/PycharmProjects/PYTHON/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/manhdk/PycharmProjects/PYTHON/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/home/manhdk/PycharmProjects/PYTHON/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 2098, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.

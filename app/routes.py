@@ -1,6 +1,6 @@
 from app import app, db
 from flask import render_template, flash, request, url_for, redirect
-from app.login_form import LoginForm, RegistrationForm
+from app.login_form import LoginForm, RegistrationForm, EditProfileForm
 from flask_login import current_user, login_user, logout_user, login_required, login_manager
 from app.models import User
 from werkzeug.urls import url_parse
@@ -69,3 +69,8 @@ def user(username):
         {'author': user, 'body': 'post #2'}
     ]
     return render_template('user.html', user=user, posts=posts)
+
+@app.route('/edit_profile', methods=['GET', 'POST'])
+@login_required
+def edit_profile():
+    form = EditProfileForm(current_user.username)

@@ -17,7 +17,7 @@ from logging.handlers import SMTPHandler, RotatingFileHandler
 import os
 
 if not app.debug:
-    # select logs or email to test (code above)
+    # select logs or email to test (code below)
     '''
     if not os.path.exists('logs'):
         os.mkdir('logs')
